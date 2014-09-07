@@ -20,7 +20,8 @@
   <div class="container"  ng-controller="ChatCtrl">
     <div class="row">
       <div class="col-md-12">
-        <h3>Simple Chat App</h3>
+        <h1>Simple Chat App</h1>
+        <h4>AngularJS + Bootstrap + Faye + Express</h4>
         <div scroll-glue class="messages">
           <div ng-repeat="msgs in chatMessages" class="message">
             <label>User {{msgs.user}}</label>
@@ -28,10 +29,10 @@
             <span>{{msgs.message}}</span>
           </div>
           <div class="message" ng-show="chatMessages && chatMessages.length == 0">
-            <label>Welcome !!</label>
+            <span>Welcome to the chat room!!</span>
           </div>
         </div>
-        <input type="text" placeholder="Message Here... Press Enter to send" class="form-control" ng-model="message" ng-keypress="sendMessage($event)"></textarea>
+        <input type="text" placeholder="Press ENTER to send message" class="form-control" ng-model="message" ng-keypress="sendMessage($event)"></textarea>
       </div>
     </div>
   </div>
