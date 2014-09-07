@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="simpleChat">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Chat Template of Bootstrap + Express + AngularJS</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+  <script src='faye/browser/faye-browser.js'></script>
+  <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
+  <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+  <script src='bower_components/angular-faye/build/angular-faye.js'></script>
+  <script src='js/main.js'></script>
+
+</head>
+<body>
+  <div class="container"  ng-controller="ChatCtrl">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="messages" scroll-glue>
+          {{chatMessages2}}
+          <div ng-repeat="msgs in chatMessages" class="message">
+            <h4>
+              User
+            </h4>
+            <span>{{msgs.message}}
+              <!-- <small class="text-muted">{{msgs.posteddate | date:'yyyy-MM-dd HH:mm:ss'}}</small> -->
+            </span>
+          </div>
+          <div class="message" ng-show="chatMessages && chatMessages.length == 0">
+            <h4>No message yet!</h4>
+          </div>
+        </div>
+        <textarea rows="3" cols="80" placeholder="Send Message" ng-model="message" ng-keypress="sendMessage($event)"></textarea>
+        <br>
+        <!-- <input class='btn' type='button' value='Chat' id='fire' /> -->
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

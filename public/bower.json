@@ -1,0 +1,19 @@
+{
+  "name": "simpleLocalChat",
+  "version": "0.0.0",
+  "authors": [
+    "Ryan Wu <hello@ryanwu.me>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-strap": "~2.1.0",
+    "angular-faye": "~0.2.1"
+  }
+}

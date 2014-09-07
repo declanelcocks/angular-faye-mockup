@@ -1,0 +1,11 @@
+{
+  "name": "simpleLocalChat",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Wu <hello@ryanwu.me> (https://github.com/flyworld)",
+  "license": "ISC"
+}

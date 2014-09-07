@@ -1,0 +1,15 @@
+{
+  "name": "angular-faye",
+  "homepage": "https://github.com/teamon/angular-faye",
+  "version": "0.2.1",
+  "_release": "0.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.1",
+    "commit": "a0346ddc07c41c21bf8cae99bf6e3d7152444d18"
+  },
+  "_source": "git://github.com/teamon/angular-faye.git",
+  "_target": "~0.2.1",
+  "_originalSource": "angular-faye",
+  "_direct": true
+}
