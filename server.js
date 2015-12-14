@@ -29,4 +29,4 @@ app.get('/', function(req, res) {
   res.send(200).status({message: 'hi mate'});
 });
 
-server.listen(8181);
+server.listen(process.env.PORT || 8181);
