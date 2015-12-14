@@ -1,7 +1,7 @@
 var app = angular.module('simpleChat', ['faye','luegg.directives']);
 
 app.factory('Faye', ['$faye', function($faye) {
-  return $faye("wss://localhost:8181/faye");
+  return $faye("http://pacific-depths-6114.herokuapp.com:8181/faye");
 }]);
 
 app.controller('ChatCtrl', function($rootScope, $scope, Faye) {
