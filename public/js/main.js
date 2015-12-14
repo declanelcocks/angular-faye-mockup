@@ -1,7 +1,7 @@
 var app = angular.module('simpleChat', ['faye','luegg.directives']);
 
 app.factory('Faye', ['$faye', function($faye) {
-  return $faye("http://localhost:8181/faye");
+  return $faye("https://localhost:8181/faye");
 }]);
 
 app.controller('ChatCtrl', function($rootScope, $scope, Faye) {
