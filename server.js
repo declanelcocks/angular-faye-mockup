@@ -26,7 +26,10 @@ app.post('/message', function(req, res) {
 });
 
 app.get('/', function(req, res) {
-  res.send(200).status({message: 'hi mate'});
+  res.send(200).status({message: 'hi mate, you have hit the root route'});
 });
 
-server.listen(process.env.PORT || 8181);
+var port = process.env.PORT || 8181;
+server.listen(port, function() {
+  console.log('Express server listening on port ' + port);
+});
